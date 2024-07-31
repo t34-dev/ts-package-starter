@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Package Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        #result {
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Universal Package Demo</h1>
+<p>This is a demo of the @well-do-it-too/ts-universal-package. It shows how the package can be used in a web environment.</p>
+<div id="result"></div>
+
+<script src="https://unpkg.com/@well-do-it-too/ts-universal-package"></script>
+<script>
+    const resultDiv = document.getElementById('result');
+    const greeting = welldoittoo.greet('GitHub Pages');
+    const doubledNumber = welldoittoo.doubleNumber(100);
+    const name = welldoittoo.getMyName();
+
+    resultDiv.innerHTML = `
+            <h2>Demo Results:</h2>
+            <p>${greeting}</p>
+            <p>Double of 100 is: ${doubledNumber}</p>
+            <p>Package name: ${name}</p>
+        `;
+</script>
+</body>
+</html>
