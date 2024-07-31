@@ -230,6 +230,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the ISC License.
 
+## Links
+
+- [GitHub Repository](https://github.com/Well-do-it-too/ts-universal-package)
+- [npm Package](https://www.npmjs.com/package/@well-do-it-too/ts-universal-package)
+- [Demo](https://well-do-it-too.github.io/ts-universal-package/)
+
 ---
 
 Developed with ❤️ by [Well-do-it-too](https://github.com/Well-do-it-too)
