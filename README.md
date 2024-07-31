@@ -1,8 +1,8 @@
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-blue?logo=typescript&v=1722436527)
-![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20-green?logo=node.js&v=1722436527)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-blue?logo=typescript&v=1722454578)
+![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20-green?logo=node.js&v=1722454578)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Well-do-it-too/ts-universal-package?v=1722420610)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Well-do-it-too/ts-universal-package?sort=semver&style=flat&logo=git&logoColor=white&label=Latest%20Version&color=blue&v=1722436527)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Well-do-it-too/ts-universal-package?sort=semver&style=flat&logo=git&logoColor=white&label=Latest%20Version&color=blue&v=1722454578)
 
 # ts-universal-package
 
