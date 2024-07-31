@@ -190,6 +190,26 @@ To run the examples locally:
    pnpm pre-commit
    ```
 
+### Using Make commands
+
+Run these commands with `make <command>`:
+
+- `make` or `make help`: Shows all available Make commands.
+- `make rmdist`: Removes the dist folder.
+- `make build`: Builds the project (includes removing dist folder).
+- `make test`: Runs the test suite.
+- `make version-up`: Updates the project version.
+- `make pre`: Runs pre-commit checks.
+
+#### Git Tag Management
+
+The project includes additional commands for managing Git tags:
+
+- `make tag`: Displays the latest Git tag.
+- `make tag-new`: Displays the next Git tag that would be created.
+- `make tag-up`: Creates and pushes a new Git tag. Note: This command can only be run from the 'main' branch.
+
+
 ## Scripts
 
 - `pnpm clean`: Remove node_modules and pnpm-lock.yaml
