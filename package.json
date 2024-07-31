@@ -1,7 +1,7 @@
 {
   "name": "@well-do-it-too/ts-universal-package",
   "version": "1.0.0",
-  "description": "A universal package with TypeScript support",
+  "description": "A universal TypeScript package template for creating libraries compatible with React, Node.js, and web projects",
   "main": "dist/index.min.js",
   "module": "dist/index.esm.min.js",
   "unpkg": "dist/index.min.js",
@@ -34,10 +34,18 @@
     "package"
   ],
   "engines": {
-    "node": ">= 20 < 21"
+    "node": ">= 18 < 21"
   },
   "author": "Vitalii Rozhkov <welldoittoo@gmail.com>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Well-do-it-too/ts-universal-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Well-do-it-too/ts-universal-package/issues"
+  },
+  "homepage": "https://github.com/Well-do-it-too/ts-universal-package#readme",
   "devDependencies": {
     "@rollup/plugin-alias": "^5.1.0",
     "@rollup/plugin-commonjs": "^22.0.0",
