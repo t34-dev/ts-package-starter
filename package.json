@@ -51,7 +51,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/Well-do-it-too/ts-universal-package#readme",
+  "homepage": "https://well-do-it-too.github.io/ts-universal-package/",
   "devDependencies": {
     "@rollup/plugin-alias": "^5.1.0",
     "@rollup/plugin-commonjs": "^22.0.0",
