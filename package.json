@@ -1,6 +1,6 @@
 {
   "name": "@well-do-it-too/ts-universal-package",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A universal TypeScript package template for creating libraries compatible with React, Node.js, and web projects",
   "main": "dist/index.min.js",
   "module": "dist/index.esm.min.js",
