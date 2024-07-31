@@ -1,0 +1,45 @@
+name: Update Version on Tag
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Get the version
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+
+      - name: Update version in package.json
+        run: node scripts/version.js ${{ steps.get_version.outputs.VERSION }}
+
+      - name: Update README.md badges
+        run: |
+          current_time=$(date +%s)
+          sed -i "s/\(https:\/\/img\.shields\.io\/.*&v=\)[0-9]*/\1$current_time/g" README.md
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add package.json README.md
+          git commit -m "Update version to ${{ steps.get_version.outputs.VERSION }}"
+
+      - name: Push changes
+        run: |
+          git push origin HEAD:${{ github.event.repository.default_branch }}
