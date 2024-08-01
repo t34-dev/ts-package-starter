@@ -1,0 +1,39 @@
+name: publish_to_npm
+
+on:
+  workflow_run:
+    workflows: ["update_version_on_tag"]
+    types:
+      - completed
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install pnpm
+        run: npm install -g pnpm@8
+
+      - name: Install dependencies
+        run: pnpm install --ignore-scripts
+
+      - name: Build project
+        run: pnpm run build
+
+      - name: Remove prepare script
+        run: npm pkg delete scripts.prepare
+
+      - name: publish_to_npm
+        run: pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

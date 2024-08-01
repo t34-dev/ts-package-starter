@@ -1,4 +1,4 @@
-name: Update Version on Tag
+name: update_version_on_tag
 
 on:
   push:
