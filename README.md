@@ -1,10 +1,10 @@
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-blue?logo=typescript&v=1722518700)
 ![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20-green?logo=node.js&v=1722518700)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/Well-do-it-too/ts-universal-package?v=1722420610)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Well-do-it-too/ts-universal-package?sort=semver&style=flat&logo=git&logoColor=white&label=Latest%20Version&color=blue&v=1722518700)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/t34-dev/ts-package-starter?v=1722420610)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/t34-dev/ts-package-starter?sort=semver&style=flat&logo=git&logoColor=white&label=Latest%20Version&color=blue&v=1722518700)
 
-# ts-universal-package
+# ts-package-starter
 
 A universal TypeScript package template for creating libraries that can be used in React, Node.js, and web projects.
 
@@ -20,7 +20,7 @@ A universal TypeScript package template for creating libraries that can be used 
 
 ## Demo
 
-You can see a live demo of this package in action at our [GitHub Pages demo site](https://well-do-it-too.github.io/ts-universal-package/).
+You can see a live demo of this package in action at our [GitHub Pages demo site](https://t34-dev.github.io/ts-package-starter/).
 
 This demo showcases the basic functionality of the package, including:
 - Greeting function
@@ -32,7 +32,7 @@ Feel free to inspect the source code of the demo page for an example of how to i
 ## Installation
 
 ```bash
-npm install @well-do-it-too/ts-universal-package
+npm install @t34-dev/ts-package-starter
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ npm install @well-do-it-too/ts-universal-package
 ### In a TypeScript/JavaScript project
 
 ```typescript
-import { greet, doubleNumber, getMyName } from '@well-do-it-too/ts-universal-package';
+import { greet, doubleNumber, getMyName } from '@t34-dev/ts-package-starter';
 
 console.log(greet('World')); // Output: Hello, World!
 console.log(doubleNumber(5)); // Output: 10
@@ -61,7 +61,7 @@ console.log(getMyName()); // Output: Well Do It Too
     <h1>Universal Package Demo</h1>
     <div id="result"></div>
 
-    <script src="https://unpkg.com/@well-do-it-too/ts-universal-package"></script>
+    <script src="https://unpkg.com/@t34-dev/ts-package-starter"></script>
     <script>
         const resultDiv = document.getElementById('result');
         const greeting = welldoittoo.greet('Browser');
@@ -84,13 +84,13 @@ console.log(getMyName()); // Output: Well Do It Too
 
 1. Install the package:
    ```bash
-   npm install @well-do-it-too/ts-universal-package
+   npm install @t34-dev/ts-package-starter
    ```
 
 2. Import and use in your React component:
    ```jsx
    import React from 'react';
-   import { greet, doubleNumber } from '@well-do-it-too/ts-universal-package';
+   import { greet, doubleNumber } from '@t34-dev/ts-package-starter';
 
    function MyComponent() {
      return (
@@ -108,12 +108,12 @@ console.log(getMyName()); // Output: Well Do It Too
 
 1. Install the package:
    ```bash
-   npm install @well-do-it-too/ts-universal-package
+   npm install @t34-dev/ts-package-starter
    ```
 
 2. Use in your Node.js script:
    ```javascript
-   const { greet, doubleNumber } = require('@well-do-it-too/ts-universal-package');
+   const { greet, doubleNumber } = require('@t34-dev/ts-package-starter');
 
    console.log(greet('Node.js'));
    console.log(`Double of 7 is: ${doubleNumber(7)}`);
@@ -134,7 +134,7 @@ You can include the package directly in your HTML file using a CDN:
 <body>
     <div id="result"></div>
 
-    <script src="https://unpkg.com/@well-do-it-too/ts-universal-package"></script>
+    <script src="https://unpkg.com/@t34-dev/ts-package-starter"></script>
     <script>
         const { greet, doubleNumber } = welldoittoo;
         
@@ -166,8 +166,8 @@ To run the examples locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Well-do-it-too/ts-universal-package.git
-   cd ts-universal-package
+   git clone https://github.com/t34-dev/ts-package-starter.git
+   cd ts-package-starter
    ```
 
 2. Install dependencies:
@@ -232,10 +232,10 @@ This project is licensed under the ISC License.
 
 ## Links
 
-- [GitHub Repository](https://github.com/Well-do-it-too/ts-universal-package)
-- [npm Package](https://www.npmjs.com/package/@well-do-it-too/ts-universal-package)
-- [Demo](https://well-do-it-too.github.io/ts-universal-package/)
+- [GitHub Repository](https://github.com/t34-dev/ts-package-starter)
+- [npm Package](https://www.npmjs.com/package/@t34-dev/ts-package-starter)
+- [Demo](https://t34-dev.github.io/ts-package-starter/)
 
 ---
 
-Developed with ❤️ by [Well-do-it-too](https://github.com/Well-do-it-too)
+Developed with ❤️ by [t34-dev](https://github.com/t34-dev)

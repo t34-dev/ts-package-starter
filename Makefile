@@ -2,7 +2,7 @@
 include .make/tag.mk
 
 # Application name
-APP_NAME := ts-universal-package
+APP_NAME := ts-package-starter
 
 # Set default target to help
 .DEFAULT_GOAL := help

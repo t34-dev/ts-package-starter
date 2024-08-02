@@ -1,5 +1,5 @@
 {
-  "name": "@well-do-it-too/ts-universal-package",
+  "name": "@t34-dev/ts-package-starter",
   "version": "1.0.7",
   "description": "A universal TypeScript package template for creating libraries compatible with React, Node.js, and web projects",
   "main": "dist/index.js",
@@ -43,15 +43,15 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Well-do-it-too/ts-universal-package.git"
+    "url": "https://github.com/t34-dev/ts-package-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/Well-do-it-too/ts-universal-package/issues"
+    "url": "https://github.com/t34-dev/ts-package-starter/issues"
   },
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://well-do-it-too.github.io/ts-universal-package/",
+  "homepage": "https://t34-dev.github.io/ts-package-starter/",
   "devDependencies": {
     "@rollup/plugin-alias": "^5.1.0",
     "@rollup/plugin-commonjs": "^22.0.0",
