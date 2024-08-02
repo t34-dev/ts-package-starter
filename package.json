@@ -1,6 +1,6 @@
 {
   "name": "@t34-developereloper/ts-package-starter",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "A universal TypeScript package template for creating libraries compatible with React, Node.js, and web projects",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
