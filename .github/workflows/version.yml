@@ -1,4 +1,4 @@
-name: update_version_on_tag
+name: update_package_and_badges
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  update-package:
+  update-package-and-badges:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,18 +31,6 @@ jobs:
       - name: Update version in package.json
         run: node scripts/version.js ${{ steps.get_version.outputs.VERSION }}
 
-  update-readme:
-    needs: update-package
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Get the version
-        id: get_version
-        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
-
       - name: Update README.md badges
         run: |
           current_time=$(date +%s)
@@ -52,11 +40,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add README.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update version to ${{ steps.get_version.outputs.VERSION }}"
+          git add package.json README.md
+          git commit -m "Update version to ${{ steps.get_version.outputs.VERSION }}"
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.event.repository.default_branch }}
+        run: |
+          git push origin HEAD:${{ github.event.repository.default_branch }}
