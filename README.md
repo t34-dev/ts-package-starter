@@ -1,8 +1,8 @@
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-blue?logo=typescript&ver=1722633465)
 ![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20-green?logo=node.js&ver=1722633465)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/t34-developereloper/ts-package-starter?ver=1722633465)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/t34-developereloper/ts-package-starter?sort=semver&style=flat&logo=git&logoColor=white&label=Latest%20Version&color=blue&ver=1722633465)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/t34-developer/ts-package-starter?ver=1722633465)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/t34-developer/ts-package-starter?sort=semver&style=flat&logo=git&logoColor=white&label=Latest%20Version&color=blue&ver=1722633465)
 
 # ts-package-starter
 
@@ -20,7 +20,7 @@ A universal TypeScript package template for creating libraries that can be used 
 
 ## Demo
 
-You can see a live demo of this package in action at our [GitHub Pages demo site](https://t34-developereloper.github.io/ts-package-starter/).
+You can see a live demo of this package in action at our [GitHub Pages demo site](https://t34-developer.github.io/ts-package-starter/).
 
 This demo showcases the basic functionality of the package, including:
 - Greeting function
