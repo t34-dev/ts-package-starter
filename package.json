@@ -1,0 +1,73 @@
+{
+  "name": "@t34-developereloper/ts-package-starter",
+  "version": "1.0.7",
+  "description": "A universal TypeScript package template for creating libraries compatible with React, Node.js, and web projects",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "unpkg": "dist/index.min.js",
+  "jsdelivr": "dist/index.min.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "clean": "shx rm -rf node_modules pnpm-lock.yaml",
+    "rmdist": "shx rm -rf dist",
+    "build": "rollup -c",
+    "test": "vitest",
+    "lint": "eslint \"{src,test,scripts}/**/*.ts\" \"*.json\"",
+    "format": "prettier --write \"{src,test,scripts}/**/*.ts\" \"*.json\"",
+    "check": "npm run lint && prettier --check \"{src,test,scripts}/**/*.ts\" \"*.json\"",
+    "version-up": "node scripts/version.js",
+    "pre-commit": "npm run format && npm run check",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "starter",
+    "node",
+    "ts",
+    "react",
+    "husky",
+    "web",
+    "eslint",
+    "prettier",
+    "universal",
+    "typescript",
+    "package"
+  ],
+  "engines": {
+    "node": ">= 18 < 21"
+  },
+  "author": "Vitalii Rozhkov <welldoittoo@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/t34-developereloper/ts-package-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/t34-developereloper/ts-package-starter/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://t34-developereloper.github.io/ts-package-starter/",
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "rollup": "^2.75.6",
+    "rollup-plugin-terser": "^7.0.2",
+    "shx": "^0.3.4",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3",
+    "vitest": "^2.0.4",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "prettier": "^3.3.3"
+  }
+}

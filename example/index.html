@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Package</title>
+</head>
+<body>
+<h1>Universal Package</h1>
+<div id="result"></div>
+
+<script src="../dist/index.js"></script>
+<script>
+    const resultDiv = document.getElementById('result');
+    const greeting = welldoittoo.greet('Browser');
+    const doubledNumber = welldoittoo.doubleNumber(21);
+
+    console.log('Name:', welldoittoo.getMyName())
+
+    resultDiv.innerHTML = `
+            <p>${greeting}</p>
+            <p>Double of 21 is: ${doubledNumber}</p>
+        `;
+</script>
+</body>
+</html>
