@@ -1,4 +1,4 @@
-name: update_package_and_badges
+name: update_version_on_tag
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
       - name: Update README.md badges
         run: |
           current_time=$(date +%s)
-          sed -i 's/\(v=\)[0-9]*/\1'"$current_time"'/g' README.md
+          sed -i 's/\(ver=\)[0-9]*/\1'"$current_time"'/g' README.md
 
       - name: Commit changes
         run: |
