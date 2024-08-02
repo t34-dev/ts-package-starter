@@ -238,4 +238,4 @@ This project is licensed under the ISC License.
 
 ---
 
-Developed with ❤️ by [t34-developer](https://github.com/t34-developer)
+Developed with ❤️ by [T34](https://github.com/t34-developer)
