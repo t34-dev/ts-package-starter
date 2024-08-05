@@ -1,5 +1,5 @@
 {
-  "name": "@t34-developer/ts-package-starter",
+  "name": "@t34-dev/ts-package-starter",
   "version": "1.3.5",
   "description": "A universal TypeScript package template for creating libraries compatible with React, Node.js, and web projects",
   "main": "dist/index.js",
@@ -43,15 +43,15 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/t34-developer/ts-package-starter.git"
+    "url": "https://github.com/t34-dev/ts-package-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/t34-developer/ts-package-starter/issues"
+    "url": "https://github.com/t34-dev/ts-package-starter/issues"
   },
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://t34-developer.github.io/ts-package-starter/",
+  "homepage": "https://t34-dev.github.io/ts-package-starter/",
   "devDependencies": {
     "@rollup/plugin-alias": "^5.1.0",
     "@rollup/plugin-commonjs": "^22.0.0",
