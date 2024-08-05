@@ -4,6 +4,7 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/t34-dev/ts-package-starter?ver=1722634298)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/t34-dev/ts-package-starter?sort=semver&style=flat&logo=git&logoColor=white&label=Latest%20Version&color=blue&ver=1722634298)
 
+
 # ts-package-starter
 
 A universal TypeScript package template for creating libraries that can be used in React, Node.js, and web projects.
